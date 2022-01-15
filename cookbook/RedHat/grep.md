@@ -6,7 +6,7 @@ grep -r /path/*.txt
 
 # You can search for blank lines with the following examples:
 
-````
+```
 grep '^$' filename
 ```
 
