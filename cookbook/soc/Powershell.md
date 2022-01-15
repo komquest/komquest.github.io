@@ -36,3 +36,14 @@ Write-Host -ForegroundColor Green "This is a test!"
 ```
 ForEach ($line in Get-Content .\a.txt)
 ```
+
+# Links:
+
+```
+# WMI Querying examples
+https://www.andersrodland.com/use-powershell-discover-create-sccm-collection-queries/
+
+#Check to see what SUG is applied to in SCCM:
+
+https://arisaastamoinencom.blogspot.com/2017/06/kickin-those-sugs.html
+```
