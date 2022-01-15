@@ -41,6 +41,12 @@ tcpdump -i en1 tcp port 22 and not host 192.168.1.20
 for i in $(find -maxdepth 1 -type f | tail -n 10); do tcpdump port 445 and host 192.19.1.32 and host 192.137.18.179 -r $i -w ~/ben${i:2}.pcap; done
 ```
 
+# editcap, split pcap files:
+
+```
+editcap.exe -c 1000000 .\tcpdump.pcap out.pcap
+```
+
 # Super loops, pull ports or IPs
 
 ```
