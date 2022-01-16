@@ -87,7 +87,7 @@ https://twitter.com/bad_packets
 **Samy Kamkar**
 https://twitter.com/samykamkar
 
-**Under the Breach** (if you want to learn about the dark)
+**Under the Breach** (if you want to learn about the dark) (SUSPENDED)
 https://twitter.com/underthebreach
 
 **IPPSEC**
