@@ -49,7 +49,7 @@ Some things to consider before you’re facing a ransomware infection include th
 - Consider keeping an incident response partner on retainer. These firms handle ransomware response on a daily basis and can provide invaluable assistance that could limit the impact of an outbreak and vastly expedite the recovery process.
 - Also consider investing in third party assessment services like penetration testing to periodically evaluate the efficacy of your security controls and tools that afford you the ability merge extensive detection and response capabilities.
 
-# High Level Apporach to asking if a Windows system is Compromised
+# Article: High Level Apporach to asking if a Windows system is Compromised
 --> This was good training to help me ask the right questions and focus my
 efforts in certain places when analyzing a system. 
 --> I learned that finding compromise can be very difficult, but if you 
