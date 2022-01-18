@@ -1,3 +1,15 @@
+# Log4j
+
+https://logging.apache.org/log4j/2.x/
+
+# Sun Burst
+
+https://www.solarwinds.com/securityadvisory
+
+# Zoho zero-day
+
+https://www.zdnet.com/article/zoho-zero-day-published-on-twitter/
+
 # Common CVEs used by ransomware gangs, 9/20/2021
 
 https://twitter.com/pancak3lullz/status/1438904720266076168
