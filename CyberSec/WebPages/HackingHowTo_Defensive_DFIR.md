@@ -30,7 +30,7 @@ https://github.com/OTRF/ThreatHunter-Playbook
 
 We can model Sysmon events and find that almost **all its events can be correlated by the ProcessGUID field.**
 
-
+![image](https://user-images.githubusercontent.com/97367610/149878663-e722808b-9ca0-4230-aacb-edb21b4383da.png)
 
 
 ---
@@ -42,7 +42,7 @@ https://docs.google.com/spreadsheets/d/1ow7YRDEDJs67kcKMZZ66_5z1ipJry9QrsDQkjQvi
 
 ---
 
-** Data Quality**
+**Data Quality**
  --> if data was water, data quality ensures water is clean and does not get contaminated.
 
 ---
@@ -74,5 +74,120 @@ I will not use morder or this playbook since it focuses on Apache Kafka and the 
 
 
 
+# Good Advise on how to deal with scrutiny from your DFIR reports:
+
+https://twitter.com/cglyer/status/1296638462125383682 
+
+---
+
+You analyze system & find multi-gig encrypted RAR archive created over month ago in common staging directory (**C:\Users\Public has been popular**) owned by account associated w/current incident. You write report - attacker stole XYZ data
+
+You just made your first mistake w/counsel
+
+# Using Yara and OST to detect malware:
+
+https://www.intezer.com/blog/threat-hunting/turning-open-source-against-malware/
+
+---
+
+During our investigation, we identified which open source OST libraries threat actors most often copy and paste into their toolsets. **One conclusion we drew is that many actors outsource memory injection logic into a small subset of open source libraries.**
+
+---
+
+Creating YARA signatures from OST library strings can yield some successful threat detections, however, attackers can easily remove those strings. **We have witnessed first hand these malware families removing such strings once they have recognized their mistake and we are aware of multiple other threat actors using this library without the accompanying strings.**
+
+---
+
+In order to counter this, Yara rules where created to find certain assembly code hex that correlated to certain functions found in open source libs. Very interesting, but you will need to compile with various versions of compilers. 
+
+# Technical Approaches to Uncovering and Remediating Malicious Activity
+
+https://us-cert.cisa.gov/sites/default/files/publications/AA20-245A-Joint_CSA-Technical_Approaches_to_Uncovering_Malicious_Activity_508.pdf
+
+---
+
+After determining that a system or multiple systems may be compromised, system administrators and/or system owners are often tempted to take immediate actions. Although well intentioned to limit the damage of the compromise, some of those actions have the adverse effect of:
+
+1.Modifying volatile data that could give a sense of what has been done; and
+2.Tipping the threat actor that the victim organization is aware of the compromise and forcing the actor to either hide their tracks or take more damaging actions (like detonating ransomware).
+
+---
+
+•Identify any process that is **not signed** and is connecting to the internet looking for beaconing or significant data transfers.
+
+•Collect all PowerShell command line requests looking for Base64-encoded commands to help identify malicious fileless attacks. 
+
+**Look for excessive .RAR, 7zip, or WinZip processes, especially with suspicious file names, tohelp discover exfiltration staging** (suspicious file names include naming conventions such as,1.zip, 2.zip, etc.)
+
+•On Microsoft OSs, collect **Scheduled Tasks, Group Policy Objects (GPO), and Windows ManagementInstrumentation (WMI) database storage** on hosts of interest looking for malicious persistence.
+
+**The Link-Local Multicast Name Resolution (LLMNR)**
+Disable LLMNR on the corporate network; if unable to disable, collect LLMNR (UDP port 5355) andNetBIOS-NS (UDP port 137).
+
+•Touching adversary infrastructure (Pinging, NSlookup, Browsing, etc.)oThese actions **can tip off the adversary that they have been detected.**
+
+•Communicating over the same network as the incident response is being conducted (**ensure all communications are held out-of-band**)
+
+---
+
+•**Improve existing network-based malware detection tools with sandboxing capabilities.**
+
+If it is suspected that the attacker has gained access to the Domain Controller, then the passwords for all local accounts—such as Guest, HelpAssistant, DefaultAccount, System, Administrator, and kbrtgt—should be reset. **It is essential that the password for the kbrtgt account is reset as this account is responsible for handling Kerberos ticket requests as well as encrypting and signing them.** The account should be reset twice (as the account has a two-password history).oThe first account reset for the kbrtgt needs to be allowed to replicate prior to the second reset to avoid any issues.
+
+•Use directory allowlisting rather than attempting to list every possible permutation of applications ina network environment. **Safe defaults allow applications to run from PROGRAMFILES,PROGRAMFILES(X86), and SYSTEM32**. Disallow all other locations unless an exception is granted.
+
+•**Reduce the number of cached credentials to one (if a laptop) or zero (if a desktop or fixed asset)**
+
+**Do not allow users to use su. Use Sudo -l instead. **
+
+**Mount /var/tmp and /tmp as noexec.**
 
 
+Manage access to the internet (e.g., providing internet access from only devices/accounts that need it, proxying all connections, **disabling internet access for privileged/administrator accounts**, enabling policies that restrict internet access using a blocklist, a resource allowlist, content type, etc.) 
+
+**Use multi-factor authentication. This is the best mitigation technique to protect against credential theft for O365 administrators and users.**
+
+Ensure that any incident response tools that point to external domains are either removed orupdated to point to internal security tools. If this is not done and an external domain to which a tool points expires, **a malicious threat actor may register it and start collecting telemetry from the infrastructure. **
+
+
+Create non-privileged accounts for privileged users and ensure they use the non- privileged accounts for all non-privileged access (e.g., web browsing, email access).
+
+**A securely segregated network can contain malicious occurrences,** reducing the impact from intruders, in the event that they have gained a foothold somewhere inside the network.
+
+**Restrict egress web traffic from servers.**
+
+# Block These on a Windows firewall:
+regsrv32
+mshta
+certutil --> Maybe since it might be used for legitimate traffic
+
+# Hybrid Analysis Notes
+
+So today I took a quick look at hybrid analysis:
+https://www.hybrid-analysis.com/
+
+Once you sign up with your email, you can have access to their API witch gives you 100 scans per day,
+200 searches per min
+2000 searches per hour
+
+Now this isn't alot of data, but it could aid in analysis if you have an indicator you would like to reference (such as IP address, hash, etc) without only using VT.
+
+HA is built with Cloudstrike's Falcon sandbox environment. This is an expensive system that allows you to run malware samples with full fledged tools that can aid in analysis
+
+# Powershell Algorithms and Data Structures
+
+Algorithms and data structures implemented in PowerShell with explanations and links to further readings
+
+https://github.com/dfinke/powershell-algorithms/blob/master/README.md
+
+
+# SYSMON User's guide with powershell
+
+https://www.varonis.com/blog/sysmon-threat-detection-guide/
+
+# WMI Abuse and Defense
+https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf
+
+# Impacket usage & detection
+
+https://neil-fox.github.io/Impacket-usage-&-detection/
