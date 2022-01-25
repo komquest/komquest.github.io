@@ -1,3 +1,9 @@
+# Get Last System Shutdown
+
+```
+Get-WinEvent -FilterHashtable @{logname = ‘System’; id = 1074}
+```
+
 # Basic One Liner Loop
 
 ```
