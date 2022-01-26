@@ -1,3 +1,7 @@
+# Explanation of setuid setgid and sticky bits under Linux:
+
+https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits
+
 # DNSCAT2
 
 This tool is designed to create an encrypted command-and-control (C&C) channel over the DNS protocol, which is an effective tunnel out of almost every network.

