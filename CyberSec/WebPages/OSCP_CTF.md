@@ -60,6 +60,8 @@ https://github.com/honze-net/nmap-bootstrap-xsl
 
 https://tryhackme.com/room/bufferoverflowprep
 
+https://github.com/0x4D31/awesome-oscp
+
 # Shellcode lookup:
 
 https://packetstormsecurity.com/files/tags/shellcode/
@@ -95,6 +97,9 @@ https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
 
+http://www.fuzzysecurity.com/tutorials/16.html
+
+
 ## Windows Exploits (Github)
 
 https://github.com/SecWiki/windows-kernel-exploits
@@ -108,5 +113,12 @@ https://github.com/stephenbradshaw/vulnserver
 ## Hack Tricks/Pentest Book
 
 https://book.hacktricks.xyz/
+
 https://six2dez.gitbook.io/pentest-book/
+
+## Topic OSCP Tools
+
+https://github.com/topics/oscp-tools
+
+
 

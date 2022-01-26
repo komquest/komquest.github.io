@@ -83,3 +83,6 @@ DISM /Image:C:\Mount /Get-CurrentEdition
 
 ```
 
+# The Fix:
+
+- Make sure you move your Computers to an OU that doesn't inherrit policy and has no gpos, some GPOs break windows upgrade!!! 
