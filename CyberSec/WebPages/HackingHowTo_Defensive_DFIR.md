@@ -1,3 +1,7 @@
+# Mitre web book "Ten Strategies of a World-Class Cybersecurity Operations Center"
+
+https://www.mitre.org/publications/all/ten-strategies-of-a-world-class-cybersecurity-operations-center
+
 # Sans Hunt Evil Poster
 [165.pdf](https://trello-attachments.s3.amazonaws.com/5d76ecf95050b2072d7c91fc/5f0cace0966c0d5ad9de30cd/a7193fd9be0a929dd22dbe155832b111/165.pdf) 
 
