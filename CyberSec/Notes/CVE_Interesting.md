@@ -1,3 +1,11 @@
+# CVE-2022-21882
+
+win32k LPE bypass CVE-2021-1732
+
+https://www.bleepingcomputer.com/news/microsoft/windows-vulnerability-with-new-public-exploits-lets-you-become-admin/#.YfbWnJajhQ0.twitter
+
+https://github.com/KaLendsi/CVE-2022-21882
+
 # Log4j
 
 https://logging.apache.org/log4j/2.x/
