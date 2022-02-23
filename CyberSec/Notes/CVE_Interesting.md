@@ -1,3 +1,9 @@
+# CVE-2021-4043
+
+pkexec privesc
+
+https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034
+
 # CVE-2022-21882
 
 win32k LPE bypass CVE-2021-1732
