@@ -14,3 +14,10 @@ git commit -m "Restoring old source code"
 # Easy Git Config Guide:
 
 https://rogerdudler.github.io/git-guide/
+
+
+# Git Push with Token
+
+```
+git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+```
