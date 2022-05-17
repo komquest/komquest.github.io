@@ -56,3 +56,9 @@ curl --proxy 127.0.0.1:8080 -sI -X OPTIONS http://10.10.10.56
 curl -X PUT http://192.168.30.97:8080/hello.txt -d @- < hello.txt
 
 ```
+
+## Check SOCKS 5 Proxy
+
+```
+curl --socks5-hostname localhost:2222 ifconfig.me
+```
