@@ -1,3 +1,56 @@
+# Go Spider
+
+--> GoSpider - Fast web spider written in Go
+
+https://github.com/jaeles-project/gospider
+
+# Pixload
+
+--> Set of tools for hiding backdoors creating/injecting payload into images.
+
+The following image types are currently supported: BMP, GIF, JPG, PNG, WebP.
+
+https://github.com/chinarulezzz/pixload
+
+# StegoCracker
+
+--> This software can hide your secret message behind the image file, wav file, mp3 file and many other file format will support in future soon if you will contribute it will be good to me thanks
+
+https://github.com/W1LDN16H7/StegoCracker
+
+# DalFox
+
+--> DalFox is an powerful open source XSS scanning tool and parameter analyzer and utility that fast the process of detecting and verify XSS flaws. It comes with a powerful testing engine, many niche features for the cool hacker!
+
+https://github.com/hahwul/dalfox
+
+# Venom
+
+--> The script will use msfvenom (metasploit) to generate shellcode in diferent formats ( C# | python
+| ruby | dll | msi | hta-psh | docm | apk | macho | elf | deb | mp4 | etc ) injects the shellcode
+generated into one template (example: python) "the python funtion will execute the shellcode into
+ram" and uses compilers like gcc (gnu cross compiler) or mingw32 or pyinstaller to build the
+executable file. It also starts an handler to recive the remote connection (shell or meterpreter)
+
+'venom' reproduces some of the technics used by Veil-Evasion.py, unicorn.py, powersploit.py, etc..
+
+https://github.com/r00t-3xp10it/venom
+
+# Chrome Key logger
+
+https://github.com/UndeadSec/HeraKeylogger
+
+# Evilginx2
+
+--> evilginx2 is a man-in-the-middle attack framework used for phishing login credentials along with session cookies, which in turn allows to bypass 2-factor authentication protection.
+
+https://github.com/kgretzky/evilginx2
+
+# Commix
+-->Commix (short for [comm]and [i]njection e[x]ploiter) is an open source penetration testing tool, written by Anastasios Stasinopoulos (@ancst), that automates the detection and exploitation of command injection vulnerabilities.
+
+https://github.com/commixproject/commix/wiki/Getting-Shells
+
 # SSHuttle
 
 --> sshuttle: where transparent proxy meets VPN meets ssh

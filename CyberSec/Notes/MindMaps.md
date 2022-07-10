@@ -1,5 +1,16 @@
 
 ---
+Dubbed **SessionManager**, the malicious software poses as a legitimate module for Internet Information Services (IIS), the web server installed by default on Exchange servers. Organizations often deploy IIS modules to streamline specific processes on their web infrastructure. Researchers from security firm Kaspersky have identified 34 servers belonging to 24 organizations that have been infected with SessionManager since March 2021. As of earlier this month, Kaspersky said, 20 organizations remained infected.
+
+---
+piled on with additional claims for **copyright infringement, false designation, business defamation, breach of contract, and violations of consumer protection law.**
+
+---
+SMS has a field called sender ID, which is set by the sender, requires no identity verification, and can be any arbitrary short string.
+
+This allows anyone to send messages to any number, identifying themselves as whoever they want to impersonate.
+
+---
 I’ll say it because it needs to be said: The United States government is in urgent need of leadership on cybersecurity at the executive branch level — preferably someone who has the authority and political will to eventually disconnect any federal government agency data portals that fail to enforce strong, multi-factor authentication.
 
 ---
