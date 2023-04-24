@@ -1,3 +1,9 @@
+# Recursive search find within files for text (case insensitive):
+
+```
+grep -ir "hello"
+```
+
 # Recursive search (used to find multiple files)
 
 ```

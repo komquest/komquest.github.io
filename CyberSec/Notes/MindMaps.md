@@ -1,3 +1,31 @@
+## Mind Maps
+
+---
+
+I disagree. FAANG experience only demonstrates that, at one point, somebody believed you could do the job. There are dead-weight employees at FAANGs (and everywhere of course) who don't really have much competency (or perhaps one very specific competency that's only valuable in that specific role at that specific company, and virtually nothing else). There are also people who were once terrific, but have burned out, turned focus towards their family, were amazing at some obsolete tool/language, etc, started (or stopped) using drugs regularly, etc
+
+---
+So there is a clock ticking if you are using those versions of Office.
+
+My solution is Office 2007 (for 32 bit) or 2010 (for 64 bit), either running on Wine or baremetal, and replacing Outlook.com by Gmail.com to which old versions of Office connect perfectly well thanks to Google Workspace Sync. 
+
+---
+
+- **QEMU**: Qemu is a free and open-source emulator and enables working on cross-platform environments. The tool provides various ways to emulate binary firmware for different architectures like Advanced RISC Machines (ARM), Microprocessors without Interlocked Pipelined Stages (MIPS), etc., on the host system. Qemu can help in full-system emulation or a single binary emulation of ELF (Executable and Linkable Format) files for the Linux system and many different platforms.
+
+---
+
+- at its core, **smart contracts** wait for conditions and execute actions, similar to traditional logic.
+- 
+
+---
+
+**Defang Url** = Make the urls non-clickable, so "http" will become "hxxp"
+
+
+
+---
+“They have two basic methods to get new IPs,” Kilmer said. “The free VPN apps, and the other is trojanized torrents.
 
 ---
 Dubbed **SessionManager**, the malicious software poses as a legitimate module for Internet Information Services (IIS), the web server installed by default on Exchange servers. Organizations often deploy IIS modules to streamline specific processes on their web infrastructure. Researchers from security firm Kaspersky have identified 34 servers belonging to 24 organizations that have been infected with SessionManager since March 2021. As of earlier this month, Kaspersky said, 20 organizations remained infected.

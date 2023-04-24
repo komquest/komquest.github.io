@@ -1,3 +1,28 @@
+#  Microsoft wont fix list (most of these have been fixed, but will be good for ctf labs)
+
+https://github.com/cfalta/MicrosoftWontFixList
+
+# Windows Lateral Movement
+
+https://posts.specterops.io/offensive-lateral-movement-1744ae62b14f
+
+# Pentesting AD mindmap
+
+https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/pentest_ad_dark.png
+
+# C2 Frameworks explanation (use google translate)
+
+https://xakep.ru/2019/10/18/post-exploitation-frameworks/
+
+- Let's start, of course, with **Rapid's Metasploit Framework 7.** At the time of writing, version 5.0.48 is available. Metasploit has the most modules today - there are tools for almost all occasions. It also works with a local database, which may include scan information, discovered accounts, and more.
+- The creed of **Cobalt Strike** is stealth. The Beacon is in a state of freeze or sleep most of the time, and only a "heartbeat" (Heartbeat) is sent to C2, so it is not easy to detect.
+- **Covenant** can be customized by creating your own templates. It's also great for Windows post-exploitation tasks.
+- **Koadic** --> this will be a good one to learn windows UAC bypass and staging tricks
+    - The Koadic console displays completed and active implant jobs. In general, the interface resembles everyone's favorite Metasploit.
+- **Merlin**, another one to mess with: https://github.com/Ne0nd0g/merlin
+
+- **silver** https://github.com/BishopFox/sliver
+
 # Explanation of setuid setgid and sticky bits under Linux:
 
 https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits

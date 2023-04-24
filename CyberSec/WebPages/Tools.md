@@ -1,3 +1,58 @@
+# libguestfs
+
+libguestfs can access almost any disk image imaginable. It can do it securely — without needing root and with multiple layers of defence against rogue disk images. It can access disk images on remote machines or on CDs/USB sticks. It can access proprietary systems like VMware and Hyper-V. 
+
+https://libguestfs.org/
+
+# Offsec Tools
+
+A vast Collection of security tools
+
+https://offsec.tools/
+
+# FLARE VM
+
+Welcome to FLARE VM - a collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a virtual machine (VM).
+
+This can also be used for alot of Blue Team stuff and malware analysis
+
+https://github.com/mandiant/flare-vm
+
+# Remix - Native IDE for Web3 Development
+
+https://remix.ethereum.org/
+
+# Websites to analyze email and web based IOCs
+
+- VirusTotal
+	- A service that provides a cloud-based detection toolset and sandbox environment.
+- InQuest
+	- A service provides network and file analysis by using threat analytics.
+  - https://labs.inquest.net/
+- IPinfo.io
+	- A service that provides detailed information about an IP address by focusing on geolocation data and service provider.
+- Talos Reputation
+	- An IP reputation check service is provided by Cisco Talos.
+- Urlscan.io
+	- A service that analyses websites by simulating regular user behaviour.
+- Browserling
+	- A browser sandbox is used to test suspicious/malicious links.
+- Wannabrowser
+	- A browser sandbox is used to test suspicious/malicious links.
+- Email Rep
+  - https://emailrep.io/
+
+
+# Another decent VPN provider
+
+Mullvad.net
+
+# Atomic Red Team
+
+Atomic Red Team™ is a library of tests mapped to the MITRE ATT&CK® framework. Security teams can use Atomic Red Team to quickly, portably, and reproducibly test their environments.
+
+https://github.com/redcanaryco/atomic-red-team
+
 # Go Spider
 
 --> GoSpider - Fast web spider written in Go
