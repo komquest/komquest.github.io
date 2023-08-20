@@ -1,2 +1,2 @@
-##[Prev_Dir](../../../)
-##[AI_links.md](AI_links.md)
+## [Prev_Dir](../)
+## [AI_links.md](AI_links.md)
