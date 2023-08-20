@@ -1,0 +1,8 @@
+##[Prev_Dir](../../)
+##[AI](/mnt/e/Troy/web/komquest.github.io//cookbook/AI)
+##[Git](/mnt/e/Troy/web/komquest.github.io//cookbook/Git)
+##[Linux_RedHat_Focus](/mnt/e/Troy/web/komquest.github.io//cookbook/Linux_RedHat_Focus)
+##[Soc](/mnt/e/Troy/web/komquest.github.io//cookbook/Soc)
+##[Temp](/mnt/e/Troy/web/komquest.github.io//cookbook/Temp)
+##[Vim](/mnt/e/Troy/web/komquest.github.io//cookbook/Vim)
+##[Windows](/mnt/e/Troy/web/komquest.github.io//cookbook/Windows)
