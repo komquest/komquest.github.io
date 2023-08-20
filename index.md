@@ -1,3 +1,7 @@
-## Hello This is WebSite
-
-[hello](/cookbook/AI/AI_links.md)
+[UpDir](../)
+[.git](/mnt/e/Troy/web/komquest.github.io//.git)
+[CyberSec](/mnt/e/Troy/web/komquest.github.io//CyberSec)
+[_layouts](/mnt/e/Troy/web/komquest.github.io//_layouts)
+[cookbook](/mnt/e/Troy/web/komquest.github.io//cookbook)
+[_config.yml](_config.yml)
+[make_index.py](make_index.py)
