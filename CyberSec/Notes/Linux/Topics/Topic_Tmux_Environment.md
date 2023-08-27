@@ -29,7 +29,10 @@ https://gist.github.com/faroit/ee545a2cec29f5fcc26edb6fe415cfe0
 # my current tmux config file:
 
 ```
-set -g prefix C-a                                                                                                                                                                                                                                                                                                            set -g mouse on                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           set-window-option -g window-size largest
+set-option -g prefix C-a
+set -g mouse on
+set-window-option -g window-size largest
+# setw -g mouse on
 ```
 
 all this does is change my prefix, sets mouse mode on and makes sure my largest windows size is always preserved.
