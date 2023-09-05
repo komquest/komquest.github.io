@@ -1,5 +1,33 @@
+## Install xrdp on RHEL 9
 
-# Check for Devices (Hard-Drives)
+```bash
+# Install EPEL
+sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+
+# Install Packages
+
+sudo dnf install tigervnc-server xrdp
+
+# Start and Enable Service
+
+sudo systemctl start xrdp.service
+sudo systemctl status xrdp.service
+sudo systemctl enable xrdp.service
+
+# Open Port In firewall
+
+sudo firewall-cmd -–permanent –-add-port=3389/tcp
+sudo firewall-cmd –-reload
+
+# Reboot 
+
+reboot
+
+# It should work now, connect via mstsc/rdp client
+```
+
+## Check for Devices (Hard-Drives)
 ```
 #lists all drives and partitions system sees
 lsblk
@@ -8,7 +36,7 @@ lsblk
 dmesg
 ```
 
-# Fork Retry: Resource Temporarily Unavailable
+## Fork Retry: Resource Temporarily Unavailable
 
 If you want to fix it:
 
@@ -24,7 +52,7 @@ https://unix.stackexchange.com/questions/205016/fork-retry-resource-temporarily-
 https://developer.ibm.com/answers/questions/195937/how-to-resolve-error-bash-fork-retry-resource-temp/
 
 
-# Troubleshoot Account Locked:
+## Troubleshoot Account Locked:
 ## Check user password information and last logins
 ```
 chage -1 USER

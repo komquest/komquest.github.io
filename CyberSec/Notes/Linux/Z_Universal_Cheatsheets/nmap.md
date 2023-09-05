@@ -16,6 +16,12 @@ nmap -sT -n --open 10.10.10.215
 nmap -sT -Pn -n -p- --open 10.10.10.74
 ```
 
+## Scan all ports and set a scan rate:
+
+```
+nmap -p- --min-rate=1000 -sV {target_IP}
+```
+
 ## Run Vulnerablity Scripts (Vuln Scan)
 
 ```

@@ -1,3 +1,9 @@
+# Injection WordLists (LFI, XSS, SQL, etc)
+
+If you are fuzzing around, you can use these lists to fuzz web apps to look for injections of many different types
+
+https://github.com/carlospolop/Auto_Wordlists/tree/main
+
 # libguestfs
 
 libguestfs can access almost any disk image imaginable. It can do it securely — without needing root and with multiple layers of defence against rogue disk images. It can access disk images on remote machines or on CDs/USB sticks. It can access proprietary systems like VMware and Hyper-V. 

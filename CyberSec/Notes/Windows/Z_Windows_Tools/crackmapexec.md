@@ -20,6 +20,12 @@ crackmapexec smb 10.10.10.175 -u admin -h ABKAKEWIEJJ
 crackmapexec winrm 10.10.10.175 -u fsmith -p ThePassword
 ```
 
+## WinRm same user with password sheet and domain
+
+```
+crackmapexec winrm 10.129.16.46 -u administrator -p /usr/share/wordlists/rockyou.txt -d unika.htb
+```
+
 ## Cheat Sheets
 
 https://www.ivoidwarranties.tech/posts/pentesting-tuts/cme/crackmapexec-cheatsheet/

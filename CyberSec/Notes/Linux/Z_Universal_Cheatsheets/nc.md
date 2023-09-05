@@ -1,3 +1,9 @@
+## The Classic listen for your reverse shell!
+
+```
+nc -lvnp 4444
+```
+
 ## Send recive file via tar
 
 ```
@@ -20,4 +26,12 @@ nc -l -p 1234 > out.file
 #Sending End
 ```
 nc -w 3 [destination] 1234 < out.file
+```
+
+## Enmurate Rsync or grab headers
+
+```bash
+
+  nc -vn 10.129.228.37 873
+
 ```
