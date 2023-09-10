@@ -1,3 +1,14 @@
+# BBOT
+
+BBOT (Bighuge BLS OSINT Tool) is a modular, recursive OSINT framework that can execute the entire OSINT workflow in a single command.
+
+BBOT is inspired by Spiderfoot but takes it to the next level with features like multi-target scans, lightning-fast asyncio performance, and NLP-powered subdomain mutations. It offers a wide range of functionality, including subdomain enumeration, port scanning, web screenshots, vulnerability scanning, and much more.
+
+- Basically this uses osint to find subdomains, vulns, etc of online web apps
+
+https://github.com/blacklanternsecurity/bbot
+
+
 # Injection WordLists (LFI, XSS, SQL, etc)
 
 If you are fuzzing around, you can use these lists to fuzz web apps to look for injections of many different types

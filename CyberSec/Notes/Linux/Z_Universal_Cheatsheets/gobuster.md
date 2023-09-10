@@ -47,4 +47,11 @@ gobuster dir -u http://10.10.10.93/uploadedfiles/  -x .asp,.aspx,.jpg,.txt,.html
 gobuster -v dir -e -k -u http://192.168.174.128:88  -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
+## Search for subdomains with a root domain
+- Note: if you find sub domains, make sure to add it to your hosts file or "real" dns will be queried!
+- "append-domain": this makes it so that you can use a list of words that will be appended to host
+```
+gobuster vhost -u vulnnet.thm -w ./a.txt -v --append-domain
+```
+
 
