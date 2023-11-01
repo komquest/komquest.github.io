@@ -21,3 +21,8 @@ wpscan --url 10.10.10.88/webservices/wp/ --plugins-detection aggressive
  dbe --> DB exports
 ```
 
+## Brute force passwords using username and password list:
+
+```
+wpscan --url http://robot.thm/wp-login.php -U Elliot -P ./realdic.txt
+```

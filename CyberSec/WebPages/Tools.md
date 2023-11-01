@@ -1,3 +1,9 @@
+# PayloadsAllTheThings
+
+A great tool if you don't want to use google or hacktricks for ctf research
+
+https://github.com/swisskyrepo/PayloadsAllTheThings
+
 # BBOT
 
 BBOT (Bighuge BLS OSINT Tool) is a modular, recursive OSINT framework that can execute the entire OSINT workflow in a single command.

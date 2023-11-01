@@ -18,7 +18,7 @@ awk '{print $6}'
 
 ## Turn Spaces into NewLines
 ```
-awk ‘{print $1”\n”$2}’ 
+awk '{print $1”\n”$2}'
 ```
 
 ## Awk cool variables
@@ -31,4 +31,16 @@ NR = Current processed line
 ```
 awk -F "a" '{print $1}'
 
+```
+
+## Specify Separator and use regex to find lines in file, then display with formatting from columns:
+
+```
+awk -F : '/root/ { print $4 " " $1 }' /etc/passwd
+
+0 root
+1 bin
+2 daemon
+4 adm
+7 lp
 ```
