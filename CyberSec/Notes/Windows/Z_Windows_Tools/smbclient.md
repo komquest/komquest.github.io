@@ -1,35 +1,41 @@
---> Check for open shares if anonymous login is enabled
+## Logon to with User that has no password
+
+```
+smbclient \\\\tactics.htb\\C$ -U TACTICS/Administrator
+```
+
+## Check for open shares if anonymous login is enabled
 
 ```
 smbclient -L 10.10.10.172
 ```
 
---> Login with user and view accessable shares:
+## Login with user and view accessable shares:
 
 ```
 smbclient -L \\\\10.10.10.172\\ -U SABatchJobs
 ```
 
---> Login to Share
+## Login to Share
 
 ```
 smbclient -U 'SABatchJobs%SABatchJobs' \\\\10.10.10.172\\azure_uploads
 ```
 
---> Null Login to Check a Share
+## Null Login to Check a Share
 
 ```
 smbclient -U '%' \\\\10.10.10.100\\Replication
 ```
 
---> Mount an open samba share to your machine:
+## Mount an open samba share to your machine:
 
 ```
 sudo mount -t cifs -o rw,guest,vers=1.0 //10.10.10.3/tmp /mnt/sm
 b/
 ```
 
---> Download files Recursively
+## Download files Recursively
 
 ```
 smbclient '\\server\share'
@@ -40,7 +46,7 @@ lcd '~/path/to/download/to/'
 mget *
 ```
 
---> View local file system
+## View local file system
 
 ```
 !ls
@@ -51,5 +57,5 @@ mget *
 ```
 smbclient -N //10.10.10.3/tmp --option='client min protocol=NT1'
 
--N --> No password prompt
+-N ## No password prompt
 ```

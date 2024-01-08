@@ -105,6 +105,23 @@ hashcat -m 20 -a 0 -O pass.txt rockyou.txt
 hashcat -m 20 -a 0 -O pass.txt rockyou.txt -r /usr/share/hashcat/rules/best64.rule
 ```
 
+## MD5 Raw
+
+```
+
+hashcat -m 0 -a 0 ./md5password.txt  /usr/share/wordlists/rockyou.txt
+
+```
+
+## Hashcat with For ZIP files:
+
+```
+zip2john encrypted.zip > ziphash.txt
+hashcat.exe -m 13600 -a 0 ./ziphash.txt ./wordlists/rockyou.txt
+
+## NOTE: This does not work due to a john developer thing, use john the ripper for zip password cracking or fcrackzip
+
+```
 
 ## Use hashcat to generate password list:
 

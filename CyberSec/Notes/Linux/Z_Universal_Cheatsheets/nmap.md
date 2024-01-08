@@ -57,6 +57,14 @@ nmap -Pn -sV --version-all 10.10.10.11
 nmap -sV --script "(http-*) and not(http-slowloris or http-brute)" 10.10.10.11
 ```
 
+## Os Vervsion Detection and Skip Host Discovery
+
+```
+
+nmap -sV -A -Pn 10.10.10.11
+
+```
+
 
 ## Enmurate LDAP
 
@@ -119,6 +127,14 @@ sudo nmap -sUV -F --version-intensity 0 10.10.10.11
 
 -F --> scan the most common 100 udp ports
 --version-intensity --> choose test based off of port number
+```
+
+## Basic UDP Scan
+
+```
+
+sudo nmap -sU 10.10.10.11
+
 ```
 
 ## Ping scan for id of hosts on network:

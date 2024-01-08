@@ -14,7 +14,7 @@ ssh -i id_rsa dexter@10.10.10.216
 ## Easy Pretty bash shell after you connect with nc (yes, this still works well!!!)
 
 ```
-python -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 ^Z
 stty raw -echo
 fg
@@ -26,13 +26,12 @@ $ export TERM=xterm-256color
 $ stty rows <num> columns <cols>
 ```
 
-use `stty sane` to revert!!!!
----
-
-</br>
+- use `stty sane` to revert!!!!
+- you can also just use `python3 -c 'import pty;pty.spawn("/bin/bash")'` and this sometimes works for a half complete but prettier shell (better than sh)
 
 
-## **--> Port Forward and Double Hop with SSH**
+
+## Port Forward and Double Hop with SSH
 
 ```
 ssh -L 5555:10.10.10.8:3389 -J dog@192.168.1.12 cat@192.168.122.36
@@ -127,4 +126,19 @@ lsmod
 
 ```
 fgrep -nr password --exclude=\*.js *
+```
+
+## Disable TMOUT Variable (auto logoff) in Bash if TMOUT is a READ-Only ENV Var
+
+```bash
+unset TMOUT > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+  gdb <<EOF > /dev/null 2>&1
+  attach $$
+  call unbind_variable("TMOUT")
+  detach
+  quit
+EOF
+fi
+
 ```

@@ -61,9 +61,14 @@ https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c68
 conda create -n NAME python=3.7
 
 # List Environments
+
 conda info --envs
 
 conda info -e
+
+# Change to different environment 
+
+conda activate Python3.9
 
 
 # Miniconda, Good if you just want conda

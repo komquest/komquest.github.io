@@ -129,3 +129,17 @@ format: URL Location:request body:Optional stuffs:Conditional
 That means your page was redirected, which could indicate a successful login. The key here is that if you only get one or a few of these after a hydra brute force, you may have the login you need so make sure you check for this. In order to get the password though you might have to do some analysis. For me I set the "F=" fail string to "S=" the sucess string and found the password that wasn't reported as sucessful.
 ```
 
+- ![](pics/20231101173832.png)
+- CMS Made Simple version 2.2.8
+
+- Search Sploit:
+
+```
+parser = optparse.OptionParser()
+parser.add_option('-u', '--url', action="store", dest="url", help="Base target uri (ex. http://10.10.10.100/cms)")
+parser.add_option('-w', '--wordlist', action="store", dest="wordlist", help="Wordlist for crack admin password")
+parser.add_option('-c', '--crack', action="store_true", dest="cracking", help="Crack password with wordlist", default=False)
+```
+
+G00d j0b, keep up!
+
