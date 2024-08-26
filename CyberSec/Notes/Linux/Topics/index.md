@@ -3,3 +3,4 @@
 ## [Topic_Tmux_Environment.md](Topic_Tmux_Environment.md)
 ## [Topic_python-bashWriteHexToFile.md](Topic_python-bashWriteHexToFile.md)
 ## [Topic_sshStuff.md](Topic_sshStuff.md)
+## [bash_bestPractice.md](bash_bestPractice.md)

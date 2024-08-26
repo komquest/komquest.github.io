@@ -13,6 +13,7 @@
 ## [ldapsearch.md](ldapsearch.md)
 ## [mdbtools.md](mdbtools.md)
 ## [msfvenom.md](msfvenom.md)
+## [mssqlclient.py.md](mssqlclient.py.md)
 ## [nc.md](nc.md)
 ## [netsh.md](netsh.md)
 ## [nslookup.md](nslookup.md)

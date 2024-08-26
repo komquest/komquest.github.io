@@ -2,6 +2,7 @@
 ## [AI](/cookbook/AI)
 ## [Git](/cookbook/Git)
 ## [Linux_RedHat_Focus](/cookbook/Linux_RedHat_Focus)
+## [Scripts](/cookbook/Scripts)
 ## [Soc](/cookbook/Soc)
 ## [Temp](/cookbook/Temp)
 ## [Vim](/cookbook/Vim)
