@@ -1,3 +1,5 @@
+__tags: windows smb
+
 ## Logon to with User that has no password
 
 ```

