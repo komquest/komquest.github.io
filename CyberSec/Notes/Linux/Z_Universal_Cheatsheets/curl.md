@@ -1,3 +1,5 @@
+__tags: curl web
+
 ## Send Data values
 
 ```
@@ -61,4 +63,9 @@ curl -X PUT http://192.168.30.97:8080/hello.txt -d @- < hello.txt
 
 ```
 curl --socks5-hostname localhost:2222 ifconfig.me
+```
+
+## Grab a local file with curl
+```
+curl http:// file:///etc/passwd
 ```

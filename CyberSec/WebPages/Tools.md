@@ -1,3 +1,11 @@
+# Detect It Easy
+- File Detection
+https://github.com/horsicq/Detect-It-Easy
+
+# Binary Ninja
+- Reverse Engineering
+https://binary.ninja/free/
+
 # PayloadsAllTheThings
 
 A great tool if you don't want to use google or hacktricks for ctf research
