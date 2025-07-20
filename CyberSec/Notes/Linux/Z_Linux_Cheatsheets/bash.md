@@ -1,7 +1,16 @@
+__tags: bash linux tech
+
 ## ps, only list certain cats
 
-```
+```bash
 ps -e -o user,pid,command
+```
+
+## ps, forest view to see process children
+
+```bash
+ps -ef --forest
+
 ```
 
 

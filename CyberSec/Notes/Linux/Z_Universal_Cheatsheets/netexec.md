@@ -1,4 +1,4 @@
-__tags: windows linux smb mssql
+__tags: windows linux smb mssql winrm ssh
 
 
 #### List all shares with username and password:
@@ -31,5 +31,13 @@ nxc smb 10.10.11.61 -u paul.taylor -p 'PASSSWORD1' --rid-brute
 nxc smb 10.10.11.61 -u 'Haze-IT-Backup$' -H 723fd747a7523dbebfc5b1d3d759ffbf
 
 #Mote the above is a computer/service account
+```
+
+#### SSH test passwords
+
+```bash
+
+nxc ssh agile.htb -u user.txt -p passwords.txt --no-bruteforce
+
 ```
 
