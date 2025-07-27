@@ -1,3 +1,5 @@
+# SecLists
+https://github.com/danielmiessler/SecLists
 # Detect It Easy
 - File Detection
 https://github.com/horsicq/Detect-It-Easy

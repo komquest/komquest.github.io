@@ -47,6 +47,11 @@ ssh -L 5555:10.10.10.8:3389 -J dog@192.168.1.12 cat@192.168.122.36
 
 ```
 
+## Expose Ports using remote forwarding
+```
+ssh -N -f -R 3000:localhost:3000 -R 8001:localhost:8001 root@10.10.14.40 -p 2222
+```
+
 ##  **Sudo command** as a specific user (run after a sudo -l)
 
 ```
