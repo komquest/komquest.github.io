@@ -1,4 +1,4 @@
 ## [Prev_Dir](../)
-## [bashers](bashers)
-## [tmux.conf](tmux.conf)
-## [vimrc](vimrc)
+## [bashers.md](bashers.md)
+## [tmux.conf.md](tmux.conf.md)
+## [vimrc.md](vimrc.md)
