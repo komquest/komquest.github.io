@@ -1,5 +1,7 @@
 ## [Prev_Dir](../)
+## [bloodhound.md](bloodhound.md)
 ## [c_exe.md](c_exe.md)
+## [certipy.md](certipy.md)
 ## [certutil.md](certutil.md)
 ## [cmd.md](cmd.md)
 ## [crackmapexec.md](crackmapexec.md)
