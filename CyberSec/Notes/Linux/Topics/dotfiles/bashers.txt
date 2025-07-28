@@ -1,4 +1,3 @@
-```bash
 ### Source This from main .bashrc or .zshrc!!!
 ### Make sure you set private variables/secrets in main bashrc or zshrc file!!!
 
@@ -34,5 +33,3 @@ tools_nmap_basic_search() {
     ports=$(nmap -p- --min-rate=1000 -T4 ${1} | grep '^[0-9]' | awk -F '/' '{print $1}' | tr '\n' ',' | sed s/,$//)                                   
     nmap -p${ports} -sC -sV ${1}                                                                                                                      
 }  
-
-```
