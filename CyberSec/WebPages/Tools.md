@@ -1,3 +1,12 @@
+# x64dbg
+- Win64 debugger
+- https://www.youtube.com/watch?v=fBPj5yEJgck
+- https://github.com/x64dbg/x64dbg
+
+# ole tools
+- ms doc file analyze
+https://github.com/decalage2/oletools
+
 # SecLists
 https://github.com/danielmiessler/SecLists
 # Detect It Easy
