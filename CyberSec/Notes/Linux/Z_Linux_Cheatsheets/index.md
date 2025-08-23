@@ -3,6 +3,7 @@
 ## [complie.md](complie.md)
 ## [find.md](find.md)
 ## [gdb.md](gdb.md)
+## [linux_interesting_paths.md](linux_interesting_paths.md)
 ## [msvenom.md](msvenom.md)
 ## [time.md](time.md)
 ## [vnc.md](vnc.md)

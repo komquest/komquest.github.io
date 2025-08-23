@@ -27,4 +27,5 @@
 ## [smbclient.md](smbclient.md)
 ## [smbmap.md](smbmap.md)
 ## [smbserver.py.md](smbserver.py.md)
+## [windows_interesting_paths.md](windows_interesting_paths.md)
 ## [wmic.md](wmic.md)

@@ -25,6 +25,7 @@
 ## [nmap.md](nmap.md)
 ## [odat-sqlplus.md](odat-sqlplus.md)
 ## [php.md](php.md)
+## [python.md](python.md)
 ## [responder.md](responder.md)
 ## [reverse.shells.md](reverse.shells.md)
 ## [s3.md](s3.md)
